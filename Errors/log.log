@@ -1,0 +1,12 @@
+09:42:19,824 ERROR Authentication:76 - Authentication failed
+org.apache.shiro.authc.UnknownAccountException: No account found for user [admin1]
+	at org.apache.shiro.realm.jdbc.JdbcRealm.doGetAuthenticationInfo(JdbcRealm.java:238)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:568)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:267)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:270)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:256)
+	at com.exmaple.shiro.Authentication.authenticateWithShiro(Authentication.java:72)
+	at com.exmaple.shiro.Authentication.main(Authentication.java:24)
